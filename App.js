@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { colors } from './src/theme/colors';
 import { spacing } from './src/theme/spacing';
 import { useFonts } from 'expo-font';
 import { typography } from './src/theme/typography';
+import Text from './src/components/text/text';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,10 +23,10 @@ export default function App() {
         <View style={{ height: 30, backgroundColor: "red", }}>
           <Text>Hello my Mobile App!!</Text>
         </View>
-        <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: spacing[6] }}>
-          <Text style={{ fontFamily: typography.bold }}>Welcome to my Mobile app!!</Text>
-          <Text style={{ fontFamily: typography.primaryBold }}>This is s sample text</Text>
-          <Text style={{ fontFamily: typography.primary }}>This is s sample text</Text>
+        <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: spacing[6], backgroundColor: 'black' }}>
+          <Text preset='h1' style={{ color: 'pink' }}>Welcome to my Mobile app!!</Text>
+          <Text preset='h3' style={{ color: 'red' }}>This is s sample text</Text>
+          <Text preset='small'>This is s sample text</Text>
         </View>
         <TouchableOpacity style={styles.button}
           onPress={() => {

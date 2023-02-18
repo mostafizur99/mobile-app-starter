@@ -1,5 +1,4 @@
 export const PLANET_LIST = [
-
     {
 
         name: "Mount Everest",
@@ -8,6 +7,7 @@ export const PLANET_LIST = [
         elevation: '8,848.86 m',
         firstAscent: "29 May 1953",
         location: "China, Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/272px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Mount_Everest",
     },
     {
@@ -17,6 +17,7 @@ export const PLANET_LIST = [
         elevation: '8,611 m',
         firstAscent: "31 July 1954",
         location: "China, Pakistan",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Chogori.jpg/272px-Chogori.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/K2",
     },
     {
@@ -26,6 +27,7 @@ export const PLANET_LIST = [
         elevation: '8,586 m',
         firstAscent: "25 May 1955",
         location: "India, Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Kangchenjunga%2C_India.jpg/272px-Kangchenjunga%2C_India.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Kangchenjunga",
     },
     {
@@ -35,6 +37,7 @@ export const PLANET_LIST = [
         elevation: '8,516 m',
         firstAscent: "18 May 1956",
         location: "China, Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Lhotse-fromChukhungRi.jpg/272px-Lhotse-fromChukhungRi.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Lhotse",
     },
     {
@@ -44,6 +47,7 @@ export const PLANET_LIST = [
         elevation: '8,481 m',
         firstAscent: "May 15, 1955",
         location: "China, Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Makalu.jpg/272px-Makalu.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Makalu",
     },
     {
@@ -53,6 +57,7 @@ export const PLANET_LIST = [
         elevation: '8,188 m',
         firstAscent: "October 19, 1954",
         location: "China, Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/ChoOyu-fromGokyo.jpg/272px-ChoOyu-fromGokyo.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Cho_Oyu",
     },
 
@@ -63,6 +68,7 @@ export const PLANET_LIST = [
         elevation: '8,167 m',
         firstAscent: "13 May 1960",
         location: "Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Dhaulagiri_mountain.jpg/272px-Dhaulagiri_mountain.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Dhaulagiri",
     },
     {
@@ -72,6 +78,7 @@ export const PLANET_LIST = [
         elevation: '8,163 m',
         firstAscent: "May 9, 1956",
         location: "Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sunrise%2C_Manaslu.jpg/272px-Sunrise%2C_Manaslu.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Manaslu",
     },
     {
@@ -81,6 +88,7 @@ export const PLANET_LIST = [
         elevation: '8,126 m',
         firstAscent: "3 July 1953",
         location: "Pakistan",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Fairy_Meadows_and_the_view_of_Nanga_Parbat.jpg/272px-Fairy_Meadows_and_the_view_of_Nanga_Parbat.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Nanga_Parbat",
     },
     {
@@ -90,6 +98,7 @@ export const PLANET_LIST = [
         elevation: '8,091 m',
         firstAscent: "3 June 1950",
         location: "	Nepal",
+        thumb: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/South_Face_of_Annapurna_I_%28Main%29.jpg/272px-South_Face_of_Annapurna_I_%28Main%29.jpg",
         wikiLink: "https://en.wikipedia.org/wiki/Annapurna",
     },
 

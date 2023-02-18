@@ -6,8 +6,9 @@ import { PLANET_LIST } from '../data/planet-list'
 import Text from '../components/text/text'
 import { spacing } from '../theme/spacing'
 import { AntDesign } from '@expo/vector-icons';
+// import MountainItem from '../components/mountains/mountain-item'
 
-export default function Home() {
+export default function Home({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <AppHeader />
@@ -17,14 +18,19 @@ export default function Home() {
                 keyExtractor={(item, index) => item.name}
                 ItemSeparatorComponent={() => <View style={styles.separator} />}
                 renderItem={({ item, index }) => {
+                    const { name, color } = item;
                     return (
-                        <View style={styles.item}>
+                        <Pressable
+                            onPress={() => {
+                                navigation.navigate('Details', { mountain: item });
+                            }}
+                            style={styles.item}>
                             <View style={{ flexDirection: "row", alignItems: "center" }}>
-                                <View style={[styles.circle, { backgroundColor: item.color }]} />
-                                <Text preset='h4' style={styles.itemName}>{item.name}</Text>
+                                <View style={[styles.circle, { backgroundColor: color }]} />
+                                <Text preset='h4' style={styles.itemName}>{name}</Text>
                             </View>
                             <AntDesign name="right" size={12} color="white" />
-                        </View>
+                        </Pressable>
                     );
                 }}
             />
@@ -39,6 +45,10 @@ const styles = StyleSheet.create({
     },
     list: {
         padding: spacing[4]
+    },
+    separator: {
+        borderBottomWidth: 0.2,
+        borderBottomColor: colors.white,
     },
     item: {
         flexDirection: 'row',
@@ -55,9 +65,5 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase',
         marginLeft: spacing[4],
     },
-    separator: {
-        borderBottomWidth: 0.2,
-        borderBottomColor: colors.white,
-    }
 
 })

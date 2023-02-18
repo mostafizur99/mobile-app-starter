@@ -7,7 +7,7 @@ import { colors } from '../../theme/colors'
 export default function AppHeader() {
     return (
         <View style={styles.container}>
-            <Text preset='h2'>APP HEADER</Text>
+            <Text preset='h2'>MOUNTAINS PEAKS</Text>
         </View>
     )
 }

@@ -1,4 +1,4 @@
-import { View, Pressable, StyleSheet } from 'react-native'
+import { View, Pressable, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import Text from '../text/text';
@@ -6,7 +6,7 @@ import { spacing } from '../../theme/spacing';
 import { AntDesign } from '@expo/vector-icons';
 
 export default function MountainItem({ item }) {
-    const { name, color } = item;
+    const { name, thumb } = item;
     const navigation = useNavigation();
 
     return (
@@ -16,7 +16,10 @@ export default function MountainItem({ item }) {
             }}
             style={styles.item}>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
-                <View style={[styles.circle, { backgroundColor: color }]} />
+                <Image
+                    style={styles.itemImage}
+                    source={{ uri: thumb }}
+                />
                 <Text preset='h4' style={styles.itemName}>{name}</Text>
             </View>
             <AntDesign name="right" size={12} color="white" />
@@ -31,7 +34,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         padding: spacing[4]
     },
-    circle: {
+    itemImage: {
         width: 30,
         height: 30,
         borderRadius: 50,

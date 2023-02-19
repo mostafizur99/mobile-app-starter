@@ -6,7 +6,7 @@ import { MOUNTAIN_LIST } from '../data/mountain-list'
 import { spacing } from '../theme/spacing'
 import MountainItem from '../components/mountains/mountain-item'
 
-export default function Home({ navigation }) {
+export default function Home() {
     const [list, setList] = useState(MOUNTAIN_LIST)
 
     const searchFilter = (text) => {
@@ -61,6 +61,5 @@ const styles = StyleSheet.create({
         borderBottomColor: colors.white,
         borderBottomWidth: 1,
         margin: spacing[5]
-    },
-
+    }
 })
